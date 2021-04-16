@@ -1,0 +1,174 @@
+:root {
+    --first: #c7c3c3;
+    --second: #666633;
+    --third: #f7f1f7;
+    --fourth: #cccc99;
+}
+
+body {
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: var(--fourth);
+    text-align: center;
+    padding: 20px;
+}
+header a {
+    font-size: 70px;
+    color: var(--second); 
+}
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second);
+    padding: 8px 12px;
+    margin: 0;
+}
+.navi_menu {
+    display: flex;
+}
+
+.navi_menu li {
+    list-style: none;
+    padding: 12px;
+}
+.navi_menu li a {
+    color: var(--fourth);
+    font-size: 24px;
+    padding: 12px;
+}
+.navi_menu li a:hover {
+    background-color: var(--third);
+    color: var(--second);
+    border-radius: 4px;    
+}
+
+.navi_icons {
+    display: flex;
+    font-size: 24px;    
+}
+.navi_icons li {
+    list-style: none;
+    padding: 12px;
+}
+.navi_icons li a {
+    color: var(--fourth);
+    padding: 8px;
+}
+
+.navi_icons li a:hover {
+    background-color: var(--third);
+    color: var(--second);
+    border-radius: 4px;
+}
+main {
+    background-color: var(--first);
+    padding: 25px;
+}
+.main ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+.main ul li {
+    display: inline-block;
+    width: 582px;
+    padding-bottom: 10px;
+    background-color: var(--second);
+    text-align: center;
+    margin: 30px;
+    border-radius: 8px;
+}
+.main ul li a {
+    color: var(--third);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.main ul li img {
+    width: 576px;
+    height: 324px;
+    border: var(--second) solid 3px;
+    border-radius: 8px;
+}
+
+#direction {
+    display:flex;
+    justify-content: center;
+}
+
+#direction p {
+    align-items: center;
+    border: var(--second) solid 3px;
+    border-radius: 4px;
+    padding: 20px 35px;
+    color: var(--second);
+    background-color: var(--fourth);
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px;
+}
+
+footer {
+    background-color:var(--second);
+    padding: 10px;
+}
+footer p { 
+    color: var(--third);
+    text-align: center;
+    font-size: 24px;   
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navi {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .navi_menu {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        width: 100%;
+    }
+    .navi_icons {
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
+    }
+    .navi_icons li a {
+        padding: 5px;
+    } 
+    .main {
+        padding: 0;
+    }
+    .main ul li {
+        padding: 0;
+    }
+    img {
+        width: 576px;
+        height: 324px;
+    } 
+       
+}
+/* biography */
+main h2, h3 {
+    color: var(--second);
+    font-weight: lighter;
+}
+
+.aboutme {
+    border: solid var(--fourth);
+    background-color: var(--fourth);
+    margin: 40px;
+    padding: 20px;
+}
