@@ -152,11 +152,12 @@ footer p {
         padding: 0;
     }
     .main ul li {
+        width: 407px;
         padding: 0;
     }
-    img {
-        width: 576px;
-        height: 324px;
+    .main ul li img {
+        width: 400px;
+        height: 227px;
     } 
        
 }
